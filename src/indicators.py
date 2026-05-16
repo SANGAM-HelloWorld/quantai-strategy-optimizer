@@ -51,8 +51,7 @@ if __name__ == "__main__":
 
     # Fetch some data
     fetcher = DataFetcher()
-    data = fetcher.get_historical_data("AAPL", "2023-01-01", "2023-12-31")
-
+    data = fetcher.get_historical_data("AAPL", "2023-01-03", "2023-12-31")
     # Add indicators
     df = TechnicalIndicators.add_all_indicators(data)
 
